@@ -1,0 +1,105 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  padding: 30px;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+.card h2 {
+  color: #2563eb;
+}
+
+.products {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+input {
+  padding: 12px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-left: 0;
+  }
+  
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px;
+  margin-top: 25px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+form button {
+  margin-left: 0;
+}
+.low-stock-warning {
+  color: #dc2626;
+  background-color: #fee2e2;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+}
